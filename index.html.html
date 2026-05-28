@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grub Coffee Co. | Serving Happiness Daily</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="brand-logo" aria-label="Grub Coffee Co. Home">
+                <span class="logo-accent">GRUB</span> COFFEE CO.
+            </a>
+            <nav class="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#locations" class="nav-link">Locations</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Inquire Now</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mobile-drawer">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+            <ul class="mobile-menu">
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#menu" class="mobile-link">Menu</a></li>
+                <li><a href="#locations" class="mobile-link">Locations</a></li>
+                <li><a href="#contact" class="mobile-link btn btn-primary">Inquire Now</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="main-content">
+
+        <section class="hero-section">
+            <div class="hero-tint"></div>
+            <div class="hero-content">
+                <span class="hero-tagline">Serving Happiness Daily</span>
+                <h1 class="hero-heading">Crafted Late Night. Enjoyed Local.</h1>
+                <p class="hero-lead">Karachi's ultimate late-night coffee destination. Sourcing exceptional single-origins and baking fresh desserts daily from 7:30 AM to 2:30 AM.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#locations" class="btn btn-outline">Find A Branch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section padding-y">
+            <div class="container grid-2">
+                <div class="about-info">
+                    <span class="label">Our Story</span>
+                    <h2 class="heading-2">The Grub Concept</h2>
+                    <p class="paragraph">Grub Coffee Co. is designed as a late-night hub for remote workers, students, and night owls in North Nazimabad. The space combines warm natural timber elements with clean, modern concrete and neon styling, creating an inviting environment for deep focus and community.</p>
+                    <p class="paragraph">Our direct-sourcing model brings premium coffee beans from global origins straight to Karachi, roasted in controlled batches and pulled on professional-grade equipment for a consistently excellent cup.</p>
+                </div>
+                <div class="about-graphic">
+                    <div class="fallback-frame" aria-hidden="true">
+                        <span class="fallback-logo">GRUB</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section padding-y">
+            <div class="container text-center">
+                <span class="label">Menu Catalog</span>
+                <h2 class="heading-2">Explore Our Selections</h2>
+                <p class="lead-text">Browse our complete menu of hot coffees, cold brews, blended frappes, and house desserts.</p>
+
+                <div class="tab-list" role="tablist" aria-label="Menu Categorization">
+                    <button class="tab-trigger active" role="tab" aria-selected="true" aria-controls="panel-hot" id="tab-hot-btn">Hot Coffee</button>
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-iced" id="tab-iced-btn" tabindex="-1">Iced Coffee</button>
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-frappe" id="tab-frappe-btn" tabindex="-1">Blended Frappe</button>
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-beverages" id="tab-beverages-btn" tabindex="-1">Coolers & Teas</button>
+                    <button class="tab-trigger" role="tab" aria-selected="false" aria-controls="panel-desserts" id="tab-desserts-btn" tabindex="-1">Desserts</button>
+                </div>
+
+                <div class="panels-container">
+                    
+                    <div class="menu-panel active" id="panel-hot" role="tabpanel" aria-labelledby="tab-hot-btn">
+                        <div class="menu-grid">
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Espresso</h3><span class="price">Rs. 150</span></div>
+                                <p class="item-desc">A concentrated 2oz shot of our signature house blend espresso.</p>
+                                <div class="item-footer"><span class="badge">2oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Americano</h3><span class="price">Rs. 200</span></div>
+                                <p class="item-desc">Classic espresso diluted with hot water for a smooth, rich cup.</p>
+                                <div class="item-footer"><span class="badge">8oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Cortado</h3><span class="price">Rs. 280</span></div>
+                                <p class="item-desc">Equal parts rich espresso and warm steamed textured milk.</p>
+                                <div class="item-footer"><span class="badge">5oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Grub Spanish Latte</h3><span class="price">Rs. 370</span></div>
+                                <p class="item-desc">Sweetened condensed milk blended with hot steamed milk and espresso.</p>
+                                <div class="item-footer"><span class="badge">8oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Latte</h3><span class="price">Rs. 299</span></div>
+                                <p class="item-desc">Smooth espresso poured over velvety steamed milk with a thin microfoam layer.</p>
+                                <div class="item-footer"><span class="badge">8oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Cappuccino</h3><span class="price">Rs. 299</span></div>
+                                <p class="item-desc">Balanced triple layer of espresso, steamed milk, and airy foam.</p>
+                                <div class="item-footer"><span class="badge">8oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Salted Caramel</h3><span class="price">Rs. 370</span></div>
+                                <p class="item-desc">Our velvety latte infused with handcrafted salted caramel syrup.</p>
+                                <div class="item-footer"><span class="badge">8oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Dark Mocha</h3><span class="price">Rs. 370</span></div>
+                                <p class="item-desc">Rich dark chocolate melted with espresso and textured milk.</p>
+                                <div class="item-footer"><span class="badge">8oz</span></div>
+                            </article>
+                        </div>
+                        <div class="extras-box">
+                            <h4>Hot Coffee Customizations</h4>
+                            <p>Milk Options: Full Fat (Free) | Skim Milk (+Rs. 50) | Lactose-Free (+Rs. 50)</p>
+                            <p>Temperature Control: Original Hot | Extra Hot</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-panel" id="panel-iced" role="tabpanel" aria-labelledby="tab-iced-btn" hidden>
+                        <div class="menu-grid">
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Iced Americano</h3><span class="price">Rs. 250</span></div>
+                                <p class="item-desc">Espresso shots pulled over filtered cold water and ice.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Iced Latte</h3><span class="price">Rs. 350</span></div>
+                                <p class="item-desc">Chilled milk over ice, capped with our double shot espresso.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Iced Grub Spanish Latte</h3><span class="price">Rs. 399</span></div>
+                                <p class="item-desc">Condensed milk cream shaken with espresso and cold milk on ice.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Iced Hazelnut</h3><span class="price">Rs. 399</span></div>
+                                <p class="item-desc">Sweet, nutty hazelnut syrup blended with chilled milk and espresso.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Iced Caramel</h3><span class="price">Rs. 399</span></div>
+                                <p class="item-desc">Espresso and chilled milk over ice, swirled with caramel sauce.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Iced French Vanilla</h3><span class="price">Rs. 399</span></div>
+                                <p class="item-desc">Smooth french vanilla bean sweet cream mixed with cold espresso.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                        </div>
+                        <div class="extras-box">
+                            <h4>Iced Coffee Extras</h4>
+                            <p>Blended Frappe Ice Glass (+Rs. 70) | Sweet Cream Topping (+Rs. 99) | Extra Espresso Shot (+Rs. 150) | Added Syrup Flavors (+Rs. 99) | Split Cup (+Rs. 50)</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-panel" id="panel-frappe" role="tabpanel" aria-labelledby="tab-frappe-btn" hidden>
+                        <div class="menu-grid">
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Hazelnut Frappe</h3><span class="price">Rs. 499</span></div>
+                                <p class="item-desc">Creamy blended hazelnut shake topped with whipped cream.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Caramel Frappe</h3><span class="price">Rs. 499</span></div>
+                                <p class="item-desc">Sweet caramel sauce blended with milk, ice, and espresso powder.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Oreo Frappe</h3><span class="price">Rs. 499</span></div>
+                                <p class="item-desc">Crushed Oreos blended with chocolate drizzle and sweet cream base.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Affogato</h3><span class="price">Rs. 449</span></div>
+                                <p class="item-desc">A scoop of creamy vanilla ice cream drowned in a hot shot of espresso.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Dark Mocha Frappe</h3><span class="price">Rs. 499</span></div>
+                                <p class="item-desc">Indulgent dark cacao blended smooth with rich espresso base and ice.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                        </div>
+                        <div class="extras-box">
+                            <h4>Frappe Enhancements</h4>
+                            <p>Extra Cream Topping (+Rs. 99) | Double Espresso Infusion (+Rs. 150) | Add Syrup Flavour (+Rs. 99)</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-panel" id="panel-beverages" role="tabpanel" aria-labelledby="tab-beverages-btn" hidden>
+                        <div class="menu-grid">
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Peach Iced Tea</h3><span class="price">Rs. 299</span></div>
+                                <p class="item-desc">Brewed black tea infused with sweet peach puree and served cold.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>White Rose Mint Tea</h3><span class="price">Rs. 299</span></div>
+                                <p class="item-desc">Refreshing green tea layered with white rose and mint profiles.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Peach Cooler</h3><span class="price">Rs. 299</span></div>
+                                <p class="item-desc">Muddled peach, mint leaves, and carbonated soda over ice.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Blueberry Cooler</h3><span class="price">Rs. 299</span></div>
+                                <p class="item-desc">Carbonated refresher infused with fresh, tart blueberry extract.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Strawberry Cooler</h3><span class="price">Rs. 299</span></div>
+                                <p class="item-desc">Sweet muddled strawberry syrup shaken with mineral water and ice.</p>
+                                <div class="item-footer"><span class="badge">12oz</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Hot Chocolate</h3><span class="price">Rs. 499</span></div>
+                                <p class="item-desc">Steamed milk whisked with rich premium dark cocoa powder.</p>
+                                <div class="item-footer"><span class="badge">8oz</span></div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="menu-panel" id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts-btn" hidden>
+                        <div class="menu-grid">
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Butter Croissant</h3><span class="price">Rs. 150</span></div>
+                                <p class="item-desc">Flaky, light, layered French-style pastry made with rich butter.</p>
+                                <div class="item-footer"><span class="badge">60 gm</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Banana Bread Slice</h3><span class="price">Rs. 250</span></div>
+                                <p class="item-desc">Dense, moist cake slice packed with sweet ripe bananas.</p>
+                                <div class="item-footer"><span class="badge">Slice</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Plain Glazed Donut</h3><span class="price">Rs. 150</span></div>
+                                <p class="item-desc">Soft, pillowy ring donut coated in a sweet sugar glaze.</p>
+                                <div class="item-footer"><span class="badge">Standard</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Nutella Donut Regular</h3><span class="price">Rs. 350</span></div>
+                                <p class="item-desc">Our signature ring donut topped with a generous layer of Nutella spread.</p>
+                                <div class="item-footer"><span class="badge">Standard</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Banana Muffin</h3><span class="price">Rs. 300</span></div>
+                                <p class="item-desc">Moist, fluffy muffin baked with banana pieces and a crumbly topping.</p>
+                                <div class="item-footer"><span class="badge">Muffin</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Chocolate Muffin</h3><span class="price">Rs. 450</span></div>
+                                <p class="item-desc">Rich double chocolate muffin loaded with semi-sweet chocolate chips.</p>
+                                <div class="item-footer"><span class="badge">Muffin</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Double Chocolate Cookie</h3><span class="price">Rs. 300</span></div>
+                                <p class="item-desc">Soft, chewy chocolate cookie loaded with sweet white and dark chips.</p>
+                                <div class="item-footer"><span class="badge">Cookie</span></div>
+                            </article>
+                            <article class="menu-item-card">
+                                <div class="item-header"><h3>Red Velvet Cookie</h3><span class="price">Rs. 250</span></div>
+                                <p class="item-desc">Classic red velvet cookie with cocoa hints and white chocolate cream.</p>
+                                <div class="item-footer"><span class="badge">Cookie</span></div>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="locations" class="locations-section padding-y bg-alt">
+            <div class="container grid-2">
+                <div class="location-details">
+                    <span class="label">Branch Directory</span>
+                    <h2 class="heading-2">Flagship Location & Hours</h2>
+                    <p class="paragraph">Located in Block H, North Nazimabad Town, Karachi, our flagship features comfortable seating, power outlets, and high-speed Wi-Fi designed for late-night productivity.</p>
+                    
+                    <div class="hours-card-box">
+                        <h3>Operating Hours</h3>
+                        <div class="hours-data"><span>Monday - Sunday</span><span>07:30 AM - 02:30 AM</span></div>
+                        <p class="hours-sub">*Open late night to accommodate study and work sessions.</p>
+                    </div>
+
+                    <div class="branches-announced">
+                        <h3>Coming Soon</h3>
+                        <div class="upcoming-item"><span>Tipu Sultan Road</span><span class="tag">In Progress</span></div>
+                        <div class="upcoming-item"><span>Bahadurabad</span><span class="tag">In Progress</span></div>
+                        <div class="upcoming-item"><span>North Karachi</span><span class="tag">Launching August 14</span></div>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <iframe 
+                        title="Grub Coffee Co. North Nazimabad"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=B%20117,%201%20Shahrah-e-Jahangir%20Rd,%20opposite%20to%20Haveli,%20Block%20H%20North%20Nazimabad%20Town,%20Karachi&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        class="styled-map" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section padding-y">
+            <div class="container grid-2">
+                <div class="contact-pitch">
+                    <span class="label">Get in Touch</span>
+                    <h2 class="heading-2">Connect with Us</h2>
+                    <p class="paragraph">Whether you are interested in custom catering, corporate events, wholesale partnerships, or general inquiries, we would love to hear from you. Fill out our simple form, and our hospitality team will reach out within 24 hours.</p>
+                    <p class="paragraph">Follow our journey on social media or send us an email directly at: <a href="mailto:hello@grubcoffeeco.com" class="text-link">hello@grubcoffeeco.com</a></p>
+                </div>
+                <form class="clean-form" id="contact-form">
+                    <div class="form-row">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-row">
+                        <textarea id="message" name="message" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <div class="status-box" id="form-feedback-box" role="alert" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo">GRUB COFFEE CO.</span>
+                <p class="footer-tag">Serving happiness daily. Premium single-origin coffee and freshly-baked desserts in Karachi, Pakistan.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Explore</h4>
+                <ul class="footer-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Along</h4>
+                <div class="social-row">
+                    <a href="https://instagram.com/grubcoffeeco" class="social-btn" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://facebook.com" class="social-btn" target="_blank" rel="noopener">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-meta text-center">
+            <p>&copy; 2026 Grub Coffee Co. All rights reserved. Deployed on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
